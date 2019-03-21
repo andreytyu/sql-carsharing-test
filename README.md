@@ -4,6 +4,7 @@ Clone the repo:
 
 ```
 git clone https://github.com/andreytyu/sql-carsharing-test.git
+cd sql-carsharing-test
 ```
 
 **Copy the data to the directory and name in data.csv**
