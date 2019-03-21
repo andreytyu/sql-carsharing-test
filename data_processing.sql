@@ -110,7 +110,7 @@ SELECT
   g.stop_time,
   h.track_points[array_length(h.track_points, 1)] AS end_point,
   st_makeline(h.track_points) AS trip_geom,
-  round(st_length(st_transform(st_makeline(h.track_points), 32637))::NUMERIC, 2) AS trip_length
+  round(st_length(st_transform(st_makeline(h.track_points), 32637))::NUMERIC / 1000, 2) AS trip_length
 FROM
   h, g
 WHERE

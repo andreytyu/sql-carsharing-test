@@ -3,7 +3,6 @@ create table telematic ("tmatic_id" numeric, "gps_time" timestamp,"lon" numeric,
 
 copy telematic from '/data/data.csv' delimiter ',' csv header;
 
-
 -- creating geometry columng from latitude/longitude, dropping spare columns
 SELECT AddGeometryColumn('telematic', 'geom', 4326, 'POINT',2);
 
