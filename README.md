@@ -6,7 +6,7 @@ Clone the repo:
 git clone https://github.com/andreytyu/sql-carsharing-test.git
 ```
 
-*Copy the data to the directory and name in data.csv*
+**Copy the data to the directory and name in data.csv**
 
 Start a container with a PostGIS-enabled database as follows:
 ```
